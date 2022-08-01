@@ -9,9 +9,13 @@ name: Java CI with Gradle
 
 on:
   push:
-    paths: 'jlox/**'
+    paths: 
+    - 'jlox/**'
+    - '.github/workflows/jlox.yml'
   pull_request:
-    paths: 'jlox/**'
+    paths: 
+    - 'jlox/**'
+    - '.github/workflows/jlox.yml'
 
 permissions:
   contents: read
