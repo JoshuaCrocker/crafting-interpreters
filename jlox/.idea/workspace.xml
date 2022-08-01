@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46d4fb86-a20c-4807-87e7-ac6c39c4ddce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +64,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -99,7 +99,21 @@
       <recent name="io.crocker.jlox" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ScannerTest">
+  <component name="RunManager" selected="Application.GenerateAST">
+    <configuration name="GenerateAST" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.crocker.tool.GenerateAST" />
+      <module name="jlox.main" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;src/main/java/io/crocker/jlox&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.crocker.tool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ScannerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -167,27 +181,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="jlox [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="init" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="jlox [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -209,13 +202,19 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.GenerateAST" />
+      <item itemvalue="Gradle.jlox [dependencies]" />
+      <item itemvalue="Gradle.jlox [test]" />
+      <item itemvalue="Gradle.ScannerTest" />
+      <item itemvalue="Gradle.ScannerTest.scanTokens" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ScannerTest" />
         <item itemvalue="Gradle.ScannerTest.scanTokens" />
         <item itemvalue="Gradle.jlox [test]" />
         <item itemvalue="Gradle.jlox [dependencies]" />
-        <item itemvalue="Gradle.jlox [init]" />
       </list>
     </recent_temporary>
   </component>
