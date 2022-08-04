@@ -43,6 +43,12 @@ public class Lox {
     }
 
     private static void runPrompt() throws IOException {
+        // Challenge: The REPL no longer supports entering a single expression and automatically
+        // printing its result value. Add support to the REPL to let users type in both statements
+        // and expressions.
+        //
+        // If they enter a statement, execute it. If they enter an expression, evaluate it and
+        // display the result.
         InputStreamReader input = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(input);
 
