@@ -2,7 +2,7 @@
 
 ## JLox Specification
 
-```
+```abnf
 program         -> declaration* EOF ;
 declaration     -> varDecl | statement ;
 varDecl         -> "var" IDENTIFIER ( "=" expression )? ";" ;
