@@ -1,13 +1,17 @@
 package io.crocker.jlox;
 
-public class ASTPrinter implements Expr.Visitor<String> {
-    String print(Expr expr) {
-        return expr.accept(this);
+import java.util.List;
+
+public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
+    private static int depth = 1;
+    String print(List<Stmt> statements) {
+        depth = 1;
+        return parenthesize("program", statements.toArray(new Stmt[0]));
     }
 
     @Override
     public String visitAssignExpr(Expr.Assign expr) {
-        return null;
+        return parenthesize("assign " + expr.name, expr.value);
     }
 
     @Override
@@ -33,7 +37,30 @@ public class ASTPrinter implements Expr.Visitor<String> {
 
     @Override
     public String visitVariableExpr(Expr.Variable expr) {
-        return null;
+        return expr.name.lexeme;
+    }
+
+    @Override
+    public String visitBlockStmt(Stmt.Block stmt) {
+        depth++;
+        String output = parenthesize("block", stmt.statements.toArray(new Stmt[0]));
+        depth--;
+        return output;
+    }
+
+    @Override
+    public String visitExpressionStmt(Stmt.Expression stmt) {
+        return parenthesize("expr", stmt.expression);
+    }
+
+    @Override
+    public String visitPrintStmt(Stmt.Print stmt) {
+        return parenthesize("print", stmt.expression);
+    }
+
+    @Override
+    public String visitVarStmt(Stmt.Var stmt) {
+        return parenthesize("var " + stmt.name.lexeme, stmt.initializer);
     }
 
     private String parenthesize(String name, Expr... exprs) {
@@ -43,6 +70,20 @@ public class ASTPrinter implements Expr.Visitor<String> {
             builder.append(" ");
             builder.append(expr.accept(this));
         }
+        builder.append(")");
+
+        return builder.toString();
+    }
+
+    private String parenthesize(String name, Stmt... stmts) {
+        StringBuilder builder = new StringBuilder();
+        builder.append("(").append(name).append("\n");
+        for (Stmt stmt : stmts) {
+            builder.append("\t".repeat(Math.max(0, depth)));
+            builder.append(stmt.accept(this));
+            builder.append("\n");
+        }
+        builder.append("\t".repeat(Math.max(0, depth-1)));
         builder.append(")");
 
         return builder.toString();

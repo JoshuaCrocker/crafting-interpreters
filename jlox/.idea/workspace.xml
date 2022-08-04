@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46d4fb86-a20c-4807-87e7-ac6c39c4ddce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../examples/variables.lox" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/variables.lox" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Lox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Lox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Stmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/tool/GenerateAST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/tool/GenerateAST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/io/crocker/jlox/ASTPrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/io/crocker/jlox/ASTPrinterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/io/crocker/jlox/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/io/crocker/jlox/ParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,7 @@
       <recent name="io.crocker.jlox" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lox (examples/variables.lox)">
+  <component name="RunManager" selected="Gradle.ASTPrinterTest">
     <configuration name="GenerateAST" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.crocker.tool.GenerateAST" />
       <module name="jlox.main" />
@@ -252,8 +249,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ParserTest" />
         <item itemvalue="Gradle.ASTPrinterTest" />
+        <item itemvalue="Gradle.ParserTest" />
         <item itemvalue="Gradle.ASTPrinterTest.print" />
         <item itemvalue="Gradle.ScannerTest" />
       </list>

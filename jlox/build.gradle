@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation (
+    testImplementation(
             'org.junit.jupiter:junit-jupiter-api:5.8.2',
             'org.junit.jupiter:junit-jupiter-params:5.8.2'
     )
@@ -22,14 +22,19 @@ sourceSets {
         java {
             srcDir 'src/main/java'
         }
-    test {
-        java {
-            srcDir 'src/main/test'
+        test {
+            java {
+                srcDir 'src/main/test'
+            }
         }
-    }
+        resources {
+            srcDir 'src/main/resources'
+        }
     }
 }
 
 test {
     useJUnitPlatform()
 }
+
+tasks.withType(Copy).all { duplicatesStrategy 'exclude' }
