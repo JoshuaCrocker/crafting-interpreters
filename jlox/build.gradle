@@ -22,11 +22,11 @@ sourceSets {
         java {
             srcDir 'src/main/java'
         }
-    }
     test {
         java {
             srcDir 'src/main/test'
         }
+    }
     }
 }
 

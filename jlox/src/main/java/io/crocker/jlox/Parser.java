@@ -28,7 +28,7 @@ public class Parser {
         try {
             if (match(VAR)) return varDeclaration();
             return statement();
-        } catch(ParseError error) {
+        } catch (ParseError error) {
             synchronize();
             return null;
         }
@@ -48,7 +48,7 @@ public class Parser {
     private Stmt varDeclaration() {
         Token name = consume(IDENTIFIER, "Expect variable name");
 
-        Expr initializer=  null;
+        Expr initializer = null;
         if (match(EQUAL)) {
             initializer = expression();
         }
@@ -64,7 +64,26 @@ public class Parser {
     }
 
     private Expr expression() {
-        return equality();
+        return assignment();
+    }
+
+    private Expr assignment() {
+        Expr expr = equality();
+
+        if (match(EQUAL)) {
+            Token equals = previous();
+            Expr value = assignment();
+
+            if (expr instanceof Expr.Variable) {
+                Token name = ((Expr.Variable) expr).name;
+                return new Expr.Assign(name, value);
+            }
+
+            // Report the error, but don't throw as the parser isn't in a panicked state.
+            error(equals, "Invalid assignment target.");
+        }
+
+        return expr;
     }
 
     private Expr equality() {
