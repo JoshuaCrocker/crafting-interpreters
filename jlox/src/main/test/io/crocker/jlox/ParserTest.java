@@ -36,33 +36,33 @@ class ParserTest {
                         "parser-test/1_variables.lox",
                         """
                                 (program
-                                \t(var a 2.0)
+                                	(var a 2.0)
                                 )"""
                 ),
                 Arguments.arguments(
                         "parser-test/2_scope.lox",
                         """
                                 (program
-                                \t(var a 2.0)
-                                \t(var b 3.0)
-                                \t(block
-                                \t\t(var a 4.0)
-                                \t\t(print (+ a b))
-                                \t)
-                                \t(print (+ a b))
+                                	(var a 2.0)
+                                	(var b 3.0)
+                                	(block
+                                		(var a 4.0)
+                                		(print (+ a b))
+                                	)
+                                	(print (+ a b))
                                 )"""
                 ),
                 Arguments.arguments(
                         "parser-test/3_if.lox",
                         """
                                 (program
-                                \t((if (< 3.0 5.0))
-                                \t(block
-                                \t\t(print true)
-                                \t)
-                                \t(block
-                                \t\t(print false)
-                                \t)
+                                	((if (< 3.0 5.0))
+                                	(block
+                                		(print true)
+                                	)
+                                	(block
+                                		(print false)
+                                	)
                                 )
                                 )"""
                 ),
@@ -70,12 +70,12 @@ class ParserTest {
                         "parser-test/4_while.lox",
                         """
                                 (program
-                                \t(var i 0.0)
-                                \t((while (< i 10.0))
-                                \t(block
-                                \t\t(print (+ i 1.0))
-                                \t\t(expr (assign IDENTIFIER i null (+ i 1.0)))
-                                \t)
+                                	(var i 0.0)
+                                	((while (< i 10.0))
+                                	(block
+                                		(print (+ i 1.0))
+                                		(expr (assign IDENTIFIER i null (+ i 1.0)))
+                                	)
                                 )
                                 )"""
                 ),
