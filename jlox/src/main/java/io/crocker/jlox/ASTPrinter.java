@@ -4,6 +4,7 @@ import java.util.List;
 
 public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
     private static int depth = 1;
+
     String print(List<Stmt> statements) {
         depth = 1;
         return parenthesize("program", statements.toArray(new Stmt[0]));
@@ -32,7 +33,7 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
 
     @Override
     public String visitLogicalExpr(Expr.Logical expr) {
-         return null;
+        return parenthesize(expr.operator.lexeme, expr.left, expr.right);
     }
 
     @Override
@@ -60,7 +61,7 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
 
     @Override
     public String visitIfStmt(Stmt.If stmt) {
-        return null;
+        return parenthesize(parenthesize("if", stmt.condition), stmt.thenBranch, stmt.elseBranch);
     }
 
     @Override
@@ -70,7 +71,7 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
 
     @Override
     public String visitWhileStmt(Stmt.While stmt) {
-        return null;
+        return parenthesize(parenthesize("while", stmt.condition), stmt.body);
     }
 
     @Override
@@ -98,7 +99,7 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
             builder.append(stmt.accept(this));
             builder.append("\n");
         }
-        builder.append("\t".repeat(Math.max(0, depth-1)));
+        builder.append("\t".repeat(Math.max(0, depth - 1)));
         builder.append(")");
 
         return builder.toString();

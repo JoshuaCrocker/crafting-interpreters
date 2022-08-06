@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46d4fb86-a20c-4807-87e7-ac6c39c4ddce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/io/crocker/jlox/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/io/crocker/jlox/ParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +65,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -102,7 +102,7 @@
       <recent name="io.crocker.jlox" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lox (examples/fib.lox)">
+  <component name="RunManager" selected="Gradle.ParserTest">
     <configuration name="GenerateAST" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.crocker.tool.GenerateAST" />
       <module name="jlox.main" />
@@ -232,6 +232,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="EnvironmentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;io.crocker.jlox.EnvironmentTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -285,6 +308,7 @@
       <item itemvalue="Application.Lox (examples/while.lox)" />
       <item itemvalue="Application.Lox (examples/fib.lox)" />
       <item itemvalue="Application.GenerateAST" />
+      <item itemvalue="Gradle.EnvironmentTest" />
       <item itemvalue="Gradle.ASTPrinterTest" />
       <item itemvalue="Gradle.ASTPrinterTest.print" />
       <item itemvalue="Gradle.ParserTest" />
@@ -292,8 +316,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ASTPrinterTest" />
         <item itemvalue="Gradle.ParserTest" />
+        <item itemvalue="Gradle.EnvironmentTest" />
+        <item itemvalue="Gradle.ASTPrinterTest" />
         <item itemvalue="Gradle.ASTPrinterTest.print" />
         <item itemvalue="Gradle.ScannerTest" />
       </list>
