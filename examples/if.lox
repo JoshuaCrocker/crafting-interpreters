@@ -1,0 +1,13 @@
+if (true and true) {
+    print "true and true = true";
+}
+
+if (true and false) {
+    print "true and false = true";
+} else {
+    print "true and false = false";
+}
+
+if (true or true) {
+    print "true or true = true";
+}

@@ -30,7 +30,7 @@ public class Environment {
             return;
         }
 
-        throw new RuntimeError(name, "Undeifned variables '" + name.lexeme +"'.");
+        throw new RuntimeError(name, "Undefined variables '" + name.lexeme +"'.");
     }
 
     public Object get(Token name) {
