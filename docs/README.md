@@ -4,14 +4,18 @@
 
 ```abnf
 program         -> declaration* EOF ;
-declaration     -> varDecl | statement ;
+declaration     -> funDecl | varDecl | statement ;
+funDecl         -> "fun" function ;
+function        -> IDENTIFIER "(" parameters? ")" block ;
+parameters      -> IDENTIFIER ( "," IDENTIFIER )* ;
 varDecl         -> "var" IDENTIFIER ( "=" expression )? ";" ;
-statement       -> exprStmt | forStmt | ifStmt | printStmt | whileStmt | block ;
+statement       -> exprStmt | forStmt | ifStmt | printStmt | returnStmt | whileStmt | block ;
 block           -> "{" declaration* "}" ;
 exprStmt        -> expression ";" ;
 forStmt         -> "for" "(" ( varDecl | exprStmt | ";" ) expression? ";" expression? ")" statement ;
 ifStmt          -> "if" "(" expression ")" statement ( "else" statement )? ;
 printStmt       -> "print" expression ";" ;
+returnStmt      -> "return" expression? ";" ;
 whileStmt       -> "while" "(" expression ")" statement ;
 expression      -> assignment ;
 assignment      -> IDENTIFIER "=" assignment | logic_or ;
@@ -21,6 +25,8 @@ equality        -> comparison ( ( "!=" | "==" ) comparison )* ;
 comparison      -> term ( ( ">" | ">=" | "<" | "<=" ) term )* ;
 term            -> factor ( ( "-" | "+" ) factor)* ;
 factor          -> unary ( ( "/" | "*" ) unary )* ;
-unary           -> ( "-" | "!" ) expression | primary ;
+unary           -> ( "-" | "!" ) unary | call ;
+call            -> primary ( "(" arguments? ")" )* ;
+arguments       -> expression ( "," expression )* ;
 primary         -> NUMBER | STRING | "true" | "false" | "nil" | "(" expression ")" ;
 ```

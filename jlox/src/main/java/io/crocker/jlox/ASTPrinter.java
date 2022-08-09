@@ -21,6 +21,11 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
     }
 
     @Override
+    public String visitCallExpr(Expr.Call expr) {
+        return null;
+    }
+
+    @Override
     public String visitGroupingExpr(Expr.Grouping expr) {
         return parenthesize("group", expr.expression);
     }
@@ -60,6 +65,11 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
     }
 
     @Override
+    public String visitFunctionStmt(Stmt.Function stmt) {
+        return null;
+    }
+
+    @Override
     public String visitIfStmt(Stmt.If stmt) {
         return parenthesize(parenthesize("if", stmt.condition), stmt.thenBranch, stmt.elseBranch);
     }
@@ -67,6 +77,11 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
     @Override
     public String visitPrintStmt(Stmt.Print stmt) {
         return parenthesize("print", stmt.expression);
+    }
+
+    @Override
+    public String visitReturnStmt(Stmt.Return stmt) {
+        return null;
     }
 
     @Override
