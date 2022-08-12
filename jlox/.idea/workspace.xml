@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46d4fb86-a20c-4807-87e7-ac6c39c4ddce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTGrapher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Expr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Stmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/tool/GenerateAST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/tool/GenerateAST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
