@@ -26,6 +26,11 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
     }
 
     @Override
+    public String visitGetExpr(Expr.Get expr) {
+        return null;
+    }
+
+    @Override
     public String visitGroupingExpr(Expr.Grouping expr) {
         return parenthesize("group", expr.expression);
     }
@@ -39,6 +44,16 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
     @Override
     public String visitLogicalExpr(Expr.Logical expr) {
         return parenthesize(expr.operator.lexeme, expr.left, expr.right);
+    }
+
+    @Override
+    public String visitSetExpr(Expr.Set expr) {
+        return null;
+    }
+
+    @Override
+    public String visitThisExpr(Expr.This expr) {
+        return null;
     }
 
     @Override
@@ -57,6 +72,11 @@ public class ASTPrinter implements Expr.Visitor<String>, Stmt.Visitor<String> {
         String output = parenthesize("block", stmt.statements.toArray(new Stmt[0]));
         depth--;
         return output;
+    }
+
+    @Override
+    public String visitClassStmt(Stmt.Class stmt) {
+        return null;
     }
 
     @Override
