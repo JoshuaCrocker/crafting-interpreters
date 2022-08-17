@@ -10,7 +10,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/ASTPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Expr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/LoxFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/LoxFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/LoxClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/LoxClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Resolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Resolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/crocker/jlox/Stmt.java" afterDir="false" />
