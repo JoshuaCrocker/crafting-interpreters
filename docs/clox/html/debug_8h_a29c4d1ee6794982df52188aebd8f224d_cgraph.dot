@@ -1,0 +1,13 @@
+digraph "disassembleChunk"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="disassembleChunk",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Write a chunk and its data to STDOUT."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="disassembleInstruction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$debug_8c.html#a867d9e6add2fbc6340e590e71776fa78",tooltip="Write the OpCode instruction to STDOUT."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="simpleInstruction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f",tooltip=" "];
+}

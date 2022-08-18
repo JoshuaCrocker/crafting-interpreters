@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "cdfgimorw",
+  0: "cdfgimorsw",
   1: "c",
   2: "cdm",
-  3: "dfimrw",
+  3: "dfimrsw",
   4: "c",
   5: "o",
   6: "o",
@@ -25,7 +25,7 @@ var indexSectionNames =
 var indexSectionLabels =
 {
   0: "All",
-  1: "Classes",
+  1: "Data Structures",
   2: "Files",
   3: "Functions",
   4: "Variables",
