@@ -21,6 +21,9 @@ build: $(SRCS)
 	$(MKDIR_P) $(BUILD_DIR)
 	$(CC) $(CPPFLAGS) $(CFLAGS) -o $(BUILD_DIR)/$(TARGET) $(SRCS) 
 
+.PHONY: run
+run:
+	./build/clox.exe
 
 .PHONY: clean
 clean:
