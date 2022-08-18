@@ -1,0 +1,43 @@
+\hypertarget{a00020}{}\doxysection{src/memory.c File Reference}
+\label{a00020}\index{src/memory.c@{src/memory.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}memory.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{a00020_a013d1424390131ba996596cd20c70ce2}{reallocate}} (void $\ast$pointer, size\+\_\+t old\+Size, size\+\_\+t new\+Size)
+\begin{DoxyCompactList}\small\item\em Reallocate memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00020_a013d1424390131ba996596cd20c70ce2}\label{a00020_a013d1424390131ba996596cd20c70ce2}} 
+\index{memory.c@{memory.c}!reallocate@{reallocate}}
+\index{reallocate@{reallocate}!memory.c@{memory.c}}
+\doxysubsubsection{\texorpdfstring{reallocate()}{reallocate()}}
+{\footnotesize\ttfamily void$\ast$ reallocate (\begin{DoxyParamCaption}\item[{void $\ast$}]{pointer,  }\item[{size\+\_\+t}]{old\+Size,  }\item[{size\+\_\+t}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Reallocate memory. 
+
+Used as the single point for all dynamic memory management (to allow for garbage collection later).
+
+The old\+Size and new\+Size arguments determine which operation the reallocate method will perform\+: \begin{DoxyVerb}| oldSize  | newSize   | Operation                   |
++----------+-----------+-----------------------------+
+| 0        | Non-zero  | Allocate new block.         |
+| Non-zero | 0         | Free allocation.            |
+| Non-zero | > oldSize | Shrink existing allocation. |
+| Non-zero | < oldSize | Grow existing allocation.   |
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & Pointer to the start of the block in memory. \\
+\hline
+{\em old\+Size} & Size of the block of memory currently. \\
+\hline
+{\em new\+Size} & Desired size of the block of memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ Pointer to the start of the block in memory. 
+\end{DoxyReturn}

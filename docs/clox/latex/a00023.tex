@@ -1,0 +1,72 @@
+\hypertarget{a00023}{}\doxysection{src/memory.h File Reference}
+\label{a00023}\index{src/memory.h@{src/memory.h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{a00023_ad3f26420257fbc4c78eece0f473860c2}{GROW\+\_\+\+CAPACITY}}(capacity)~    ((capacity) $<$ 8 ? 8 \+: (capacity) $\ast$ 2)
+\item 
+\#define \mbox{\hyperlink{a00023_a535c54c8dcb6e740b47e09ee33c07f8f}{GROW\+\_\+\+ARRAY}}(type,  pointer,  old\+Count,  new\+Count)~    (type$\ast$)\mbox{\hyperlink{a00023_a013d1424390131ba996596cd20c70ce2}{reallocate}}(pointer, sizeof(type) $\ast$ (old\+Count), sizeof(type) $\ast$ (new\+Count))
+\item 
+\#define \mbox{\hyperlink{a00023_a3b69129733a4bd10f3c5726e4ea6e518}{FREE\+\_\+\+ARRAY}}(type,  pointer,  old\+Count)~    \mbox{\hyperlink{a00023_a013d1424390131ba996596cd20c70ce2}{reallocate}}(pointer, sizeof(type) $\ast$ (old\+Count), 0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{a00023_a013d1424390131ba996596cd20c70ce2}{reallocate}} (void $\ast$pointer, size\+\_\+t old\+Size, size\+\_\+t new\+Size)
+\begin{DoxyCompactList}\small\item\em Reallocate memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{a00023_a3b69129733a4bd10f3c5726e4ea6e518}\label{a00023_a3b69129733a4bd10f3c5726e4ea6e518}} 
+\index{memory.h@{memory.h}!FREE\_ARRAY@{FREE\_ARRAY}}
+\index{FREE\_ARRAY@{FREE\_ARRAY}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{FREE\_ARRAY}{FREE\_ARRAY}}
+{\footnotesize\ttfamily \#define FREE\+\_\+\+ARRAY(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{pointer,  }\item[{}]{old\+Count }\end{DoxyParamCaption})~    \mbox{\hyperlink{a00023_a013d1424390131ba996596cd20c70ce2}{reallocate}}(pointer, sizeof(type) $\ast$ (old\+Count), 0)}
+
+\mbox{\Hypertarget{a00023_a535c54c8dcb6e740b47e09ee33c07f8f}\label{a00023_a535c54c8dcb6e740b47e09ee33c07f8f}} 
+\index{memory.h@{memory.h}!GROW\_ARRAY@{GROW\_ARRAY}}
+\index{GROW\_ARRAY@{GROW\_ARRAY}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{GROW\_ARRAY}{GROW\_ARRAY}}
+{\footnotesize\ttfamily \#define GROW\+\_\+\+ARRAY(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{pointer,  }\item[{}]{old\+Count,  }\item[{}]{new\+Count }\end{DoxyParamCaption})~    (type$\ast$)\mbox{\hyperlink{a00023_a013d1424390131ba996596cd20c70ce2}{reallocate}}(pointer, sizeof(type) $\ast$ (old\+Count), sizeof(type) $\ast$ (new\+Count))}
+
+\mbox{\Hypertarget{a00023_ad3f26420257fbc4c78eece0f473860c2}\label{a00023_ad3f26420257fbc4c78eece0f473860c2}} 
+\index{memory.h@{memory.h}!GROW\_CAPACITY@{GROW\_CAPACITY}}
+\index{GROW\_CAPACITY@{GROW\_CAPACITY}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{GROW\_CAPACITY}{GROW\_CAPACITY}}
+{\footnotesize\ttfamily \#define GROW\+\_\+\+CAPACITY(\begin{DoxyParamCaption}\item[{}]{capacity }\end{DoxyParamCaption})~    ((capacity) $<$ 8 ? 8 \+: (capacity) $\ast$ 2)}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00023_a013d1424390131ba996596cd20c70ce2}\label{a00023_a013d1424390131ba996596cd20c70ce2}} 
+\index{memory.h@{memory.h}!reallocate@{reallocate}}
+\index{reallocate@{reallocate}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{reallocate()}{reallocate()}}
+{\footnotesize\ttfamily void$\ast$ reallocate (\begin{DoxyParamCaption}\item[{void $\ast$}]{pointer,  }\item[{size\+\_\+t}]{old\+Size,  }\item[{size\+\_\+t}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Reallocate memory. 
+
+Used as the single point for all dynamic memory management (to allow for garbage collection later).
+
+The old\+Size and new\+Size arguments determine which operation the reallocate method will perform\+: \begin{DoxyVerb}| oldSize  | newSize   | Operation                   |
++----------+-----------+-----------------------------+
+| 0        | Non-zero  | Allocate new block.         |
+| Non-zero | 0         | Free allocation.            |
+| Non-zero | > oldSize | Shrink existing allocation. |
+| Non-zero | < oldSize | Grow existing allocation.   |
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & Pointer to the start of the block in memory. \\
+\hline
+{\em old\+Size} & Size of the block of memory currently. \\
+\hline
+{\em new\+Size} & Desired size of the block of memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ Pointer to the start of the block in memory. 
+\end{DoxyReturn}

@@ -1,0 +1,64 @@
+\hypertarget{a00002}{}\doxysection{src/chunk.c File Reference}
+\label{a00002}\index{src/chunk.c@{src/chunk.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}chunk.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}memory.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00002_a6fb4c9316c5daf0ff4bd05af12e31849}{init\+Chunk}} (\mbox{\hyperlink{a00029}{Chunk}} $\ast$chunk)
+\begin{DoxyCompactList}\small\item\em Initialise an empty chunk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00002_ad8d91576259f317ef240aad402880875}{free\+Chunk}} (\mbox{\hyperlink{a00029}{Chunk}} $\ast$chunk)
+\begin{DoxyCompactList}\small\item\em Free up the resources used by the given chunk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00002_a1461b5fa881d0a4ca5142242fd14c9bb}{write\+Chunk}} (\mbox{\hyperlink{a00029}{Chunk}} $\ast$chunk, uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em Write a byte to the end of the given chunk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00002_ad8d91576259f317ef240aad402880875}\label{a00002_ad8d91576259f317ef240aad402880875}} 
+\index{chunk.c@{chunk.c}!freeChunk@{freeChunk}}
+\index{freeChunk@{freeChunk}!chunk.c@{chunk.c}}
+\doxysubsubsection{\texorpdfstring{freeChunk()}{freeChunk()}}
+{\footnotesize\ttfamily void free\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00029}{Chunk}} $\ast$}]{chunk }\end{DoxyParamCaption})}
+
+
+
+Free up the resources used by the given chunk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chunk} & The chunk to free up. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00002_a6fb4c9316c5daf0ff4bd05af12e31849}\label{a00002_a6fb4c9316c5daf0ff4bd05af12e31849}} 
+\index{chunk.c@{chunk.c}!initChunk@{initChunk}}
+\index{initChunk@{initChunk}!chunk.c@{chunk.c}}
+\doxysubsubsection{\texorpdfstring{initChunk()}{initChunk()}}
+{\footnotesize\ttfamily void init\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00029}{Chunk}} $\ast$}]{chunk }\end{DoxyParamCaption})}
+
+
+
+Initialise an empty chunk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chunk} & The chunk. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00002_a1461b5fa881d0a4ca5142242fd14c9bb}\label{a00002_a1461b5fa881d0a4ca5142242fd14c9bb}} 
+\index{chunk.c@{chunk.c}!writeChunk@{writeChunk}}
+\index{writeChunk@{writeChunk}!chunk.c@{chunk.c}}
+\doxysubsubsection{\texorpdfstring{writeChunk()}{writeChunk()}}
+{\footnotesize\ttfamily void write\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00029}{Chunk}} $\ast$}]{chunk,  }\item[{uint8\+\_\+t}]{byte }\end{DoxyParamCaption})}
+
+
+
+Write a byte to the end of the given chunk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chunk} & The chunk to write to. \\
+\hline
+{\em byte} & The byte to add to the end of the chunk. \\
+\hline
+\end{DoxyParams}

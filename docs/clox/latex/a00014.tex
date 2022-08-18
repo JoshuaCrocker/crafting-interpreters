@@ -1,0 +1,50 @@
+\hypertarget{a00014}{}\doxysection{src/debug.h File Reference}
+\label{a00014}\index{src/debug.h@{src/debug.h}}
+{\ttfamily \#include \char`\"{}chunk.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00014_a29c4d1ee6794982df52188aebd8f224d}{disassemble\+Chunk}} (\mbox{\hyperlink{a00029}{Chunk}} $\ast$chunk, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Write a chunk and its data to STDOUT. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{a00014_a867d9e6add2fbc6340e590e71776fa78}{disassemble\+Instruction}} (\mbox{\hyperlink{a00029}{Chunk}} $\ast$chunk, int offset)
+\begin{DoxyCompactList}\small\item\em Write the Op\+Code instruction to STDOUT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00014_a29c4d1ee6794982df52188aebd8f224d}\label{a00014_a29c4d1ee6794982df52188aebd8f224d}} 
+\index{debug.h@{debug.h}!disassembleChunk@{disassembleChunk}}
+\index{disassembleChunk@{disassembleChunk}!debug.h@{debug.h}}
+\doxysubsubsection{\texorpdfstring{disassembleChunk()}{disassembleChunk()}}
+{\footnotesize\ttfamily void disassemble\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00029}{Chunk}} $\ast$}]{chunk,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Write a chunk and its data to STDOUT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chunk} & \mbox{\hyperlink{a00029}{Chunk}} to disassemble. \\
+\hline
+{\em name} & Name used to identify the chunk. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{a00014_a867d9e6add2fbc6340e590e71776fa78}\label{a00014_a867d9e6add2fbc6340e590e71776fa78}} 
+\index{debug.h@{debug.h}!disassembleInstruction@{disassembleInstruction}}
+\index{disassembleInstruction@{disassembleInstruction}!debug.h@{debug.h}}
+\doxysubsubsection{\texorpdfstring{disassembleInstruction()}{disassembleInstruction()}}
+{\footnotesize\ttfamily int disassemble\+Instruction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00029}{Chunk}} $\ast$}]{chunk,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+
+
+Write the Op\+Code instruction to STDOUT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chunk} & \mbox{\hyperlink{a00029}{Chunk}} to read from. \\
+\hline
+{\em offset} & Offset from the start of the chunk at which the instruction begins. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Offset from the start of the chunk to the next instruction. 
+\end{DoxyReturn}
