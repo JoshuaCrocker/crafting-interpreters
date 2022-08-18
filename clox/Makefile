@@ -29,6 +29,10 @@ run:
 clean:
 	$(RM) -r $(BUILD_DIR)
 
+.PHONY: docs
+docs:
+	doxygen Doxyfile
+
 -include $(DEPS)
 
 MKDIR_P ?= mkdir -p
