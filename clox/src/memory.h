@@ -28,10 +28,10 @@
  *     | Non-zero | > oldSize | Shrink existing allocation. |
  *     | Non-zero | < oldSize | Grow existing allocation.   |
  * 
- * @param pointer 
- * @param oldSize 
- * @param newSize 
- * @return void* 
+ * @param pointer Pointer to the start of the block in memory.
+ * @param oldSize Size of the block of memory currently. 
+ * @param newSize Desired size of the block of memory.
+ * @return void*  Pointer to the start of the block in memory.
  */
 void* reallocate(void* pointer, size_t oldSize, size_t newSize);
 
