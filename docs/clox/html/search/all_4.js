@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['initchunk_16',['initChunk',['../chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849',1,'initChunk(Chunk *chunk):&#160;chunk.c'],['../chunk_8h.html#a6fb4c9316c5daf0ff4bd05af12e31849',1,'initChunk(Chunk *chunk):&#160;chunk.c']]]
+  ['grow_5farray_17',['GROW_ARRAY',['../memory_8h.html#a535c54c8dcb6e740b47e09ee33c07f8f',1,'memory.h']]],
+  ['grow_5fcapacity_18',['GROW_CAPACITY',['../memory_8h.html#ad3f26420257fbc4c78eece0f473860c2',1,'memory.h']]]
 ];

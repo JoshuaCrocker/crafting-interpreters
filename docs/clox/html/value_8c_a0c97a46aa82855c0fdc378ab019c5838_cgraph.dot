@@ -1,0 +1,11 @@
+digraph "freeValueArray"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="freeValueArray",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Free up the resources used by the given array."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="initValueArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$value_8c.html#a6b3e6aaa3c61222073b87c5c033c9370",tooltip="Initialise an empty array."];
+}

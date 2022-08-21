@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['freechunk_38',['freeChunk',['../chunk_8c.html#ad8d91576259f317ef240aad402880875',1,'freeChunk(Chunk *chunk):&#160;chunk.c'],['../chunk_8h.html#ad8d91576259f317ef240aad402880875',1,'freeChunk(Chunk *chunk):&#160;chunk.c']]]
+  ['constantinstruction_52',['constantInstruction',['../debug_8c.html#a8f5a369035da87257083bcec90bc3487',1,'debug.c']]]
 ];

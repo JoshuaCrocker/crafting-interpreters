@@ -7,5 +7,10 @@ digraph "freeChunk"
   rankdir="LR";
   Node1 [label="freeChunk",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Free up the resources used by the given chunk."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="initChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849",tooltip="Initialise an empty chunk."];
+  Node2 [label="freeValueArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$value_8c.html#a0c97a46aa82855c0fdc378ab019c5838",tooltip="Free up the resources used by the given array."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="initValueArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$value_8c.html#a6b3e6aaa3c61222073b87c5c033c9370",tooltip="Initialise an empty array."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="initChunk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849",tooltip="Initialise an empty chunk."];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

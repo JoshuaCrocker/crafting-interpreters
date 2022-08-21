@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['disassemblechunk_36',['disassembleChunk',['../debug_8c.html#a29c4d1ee6794982df52188aebd8f224d',1,'disassembleChunk(Chunk *chunk, const char *name):&#160;debug.c'],['../debug_8h.html#a29c4d1ee6794982df52188aebd8f224d',1,'disassembleChunk(Chunk *chunk, const char *name):&#160;debug.c']]],
-  ['disassembleinstruction_37',['disassembleInstruction',['../debug_8c.html#a867d9e6add2fbc6340e590e71776fa78',1,'disassembleInstruction(Chunk *chunk, int offset):&#160;debug.c'],['../debug_8h.html#a867d9e6add2fbc6340e590e71776fa78',1,'disassembleInstruction(Chunk *chunk, int offset):&#160;debug.c']]]
+  ['addconstant_51',['addConstant',['../chunk_8c.html#ade1c9eed6f03b09db332b7ddf4639f5f',1,'addConstant(Chunk *chunk, Value value):&#160;chunk.c'],['../chunk_8h.html#ade1c9eed6f03b09db332b7ddf4639f5f',1,'addConstant(Chunk *chunk, Value value):&#160;chunk.c']]]
 ];
