@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writechunk_25',['writeChunk',['../chunk_8c.html#a1461b5fa881d0a4ca5142242fd14c9bb',1,'writeChunk(Chunk *chunk, uint8_t byte):&#160;chunk.c'],['../chunk_8h.html#a1461b5fa881d0a4ca5142242fd14c9bb',1,'writeChunk(Chunk *chunk, uint8_t byte):&#160;chunk.c']]]
+  ['printvalue_29',['printValue',['../value_8c.html#a82c711c20ecc604872af80107c561375',1,'printValue(Value value):&#160;value.c'],['../value_8h.html#a82c711c20ecc604872af80107c561375',1,'printValue(Value value):&#160;value.c']]]
 ];

@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['reallocate_23',['reallocate',['../memory_8c.html#a013d1424390131ba996596cd20c70ce2',1,'reallocate(void *pointer, size_t oldSize, size_t newSize):&#160;memory.c'],['../memory_8h.html#a013d1424390131ba996596cd20c70ce2',1,'reallocate(void *pointer, size_t oldSize, size_t newSize):&#160;memory.c']]]
+  ['main_22',['main',['../main_8c.html#ac0f2228420376f4db7e1274f2b41667c',1,'main.c']]],
+  ['main_2ec_23',['main.c',['../main_8c.html',1,'']]],
+  ['memory_2ec_24',['memory.c',['../memory_8c.html',1,'']]],
+  ['memory_2eh_25',['memory.h',['../memory_8h.html',1,'']]]
 ];

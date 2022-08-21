@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['capacity_44',['capacity',['../struct_chunk.html#a131996bea8613a7762363e200ea905da',1,'Chunk']]],
-  ['code_45',['code',['../struct_chunk.html#a3bd97432faba57c9187c7d264995b33f',1,'Chunk']]],
-  ['count_46',['count',['../struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df',1,'Chunk']]]
+  ['capacity_65',['capacity',['../struct_chunk.html#a131996bea8613a7762363e200ea905da',1,'Chunk::capacity()'],['../struct_value_array.html#a8e652edc5930fdfc96fa6a8f84b66739',1,'ValueArray::capacity()']]],
+  ['code_66',['code',['../struct_chunk.html#a3bd97432faba57c9187c7d264995b33f',1,'Chunk']]],
+  ['constants_67',['constants',['../struct_chunk.html#a6ef3ac2a64667a4635b414daca1196af',1,'Chunk']]],
+  ['count_68',['count',['../struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df',1,'Chunk::count()'],['../struct_value_array.html#a576b2288798a1be9ef9a4673cd410cb9',1,'ValueArray::count()']]]
 ];
