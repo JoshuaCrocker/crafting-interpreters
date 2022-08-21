@@ -25,6 +25,7 @@ jobs:
     needs: build
     steps:
     - uses: actions/checkout@v3
+    - run: sudo apt-get install doxygen
     - run: cd clox && make docs
     - name: Commit changes
       uses: stefanzweifel/git-auto-commit-action@v4
