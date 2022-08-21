@@ -1,0 +1,21 @@
+name: CLox CI
+
+on:
+  push:
+    paths: 
+    - 'clox/**'
+    - '.github/workflows/clox.yml'
+  pull_request:
+    paths: 
+    - 'clox/**'
+    - '.github/workflows/clox.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: cd clox && make build
