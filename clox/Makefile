@@ -16,12 +16,13 @@ TEST_SRCS := $(shell find $(TEST_DIR) -name *.c -or -name *.cpp -or -name *.h) #
 OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 DEPS := $(OBJS:.o=.d) # https://www.gnu.org/software/make/manual/make.html#Automatic-Prerequisites
 
-INC_DIRS := $(shell find $(SRC_DIR) -type d)
-INC_FLAGS := $(addprefix -I,$(INC_DIRS))
-
 GTEST_DIR ?= ./vendor/gtest/googletest/googletest
 GTEST_HEADERS := $(shell find $(GTEST_DIR)/include -name *.h)
 GTEST_SRCS := $(shell find $(GTEST_DIR)/src -name *.h -or -name *.cc)
+
+INC_DIRS := $(shell find $(SRC_DIR) -type d)
+INC_DIRS += $(GTEST_HEADERS)
+INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
 CC = g++
 
