@@ -18,7 +18,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - run: cd clox && make build
+    - run: cd clox && make build/clox
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v3
+    - run: cd clox && make build/test
+    - run: ./build/test
 
   docs:
     runs-on: ubuntu-latest
