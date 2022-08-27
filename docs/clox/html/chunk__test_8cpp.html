@@ -120,26 +120,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chunk__test_8cpp_source.html#l00015">15</a> of file <a class="el" href="chunk__test_8cpp_source.html">chunk_test.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                      {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="struct_chunk.html">Chunk</a> chunk;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849">initChunk</a>(&amp;chunk);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// Add data to chunk...</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> constant = <a class="code" href="chunk_8c.html#ade1c9eed6f03b09db332b7ddf4639f5f">addConstant</a>(&amp;chunk, 1.2);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a>(&amp;chunk, <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>, 123);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a>(&amp;chunk, constant, 123);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// ...then free</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="chunk_8c.html#ad8d91576259f317ef240aad402880875">freeChunk</a>(&amp;chunk);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">count</a>, 0);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a131996bea8613a7762363e200ea905da">capacity</a>, 0);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a3bd97432faba57c9187c7d264995b33f">code</a>, NULL);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#abc3bc1330700917d0c02794dde641ec9">lines</a>, NULL);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="chunk__test_8cpp_source.html#l00016">16</a> of file <a class="el" href="chunk__test_8cpp_source.html">chunk_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                      {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="struct_chunk.html">Chunk</a> chunk;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849">initChunk</a>(&amp;chunk);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Add data to chunk...</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> constant = <a class="code" href="chunk_8c.html#ade1c9eed6f03b09db332b7ddf4639f5f">addConstant</a>(&amp;chunk, 1.2);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a>(&amp;chunk, <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>, 123);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a>(&amp;chunk, constant, 123);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// ...then free</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="chunk_8c.html#ad8d91576259f317ef240aad402880875">freeChunk</a>(&amp;chunk);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">count</a>, 0);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a131996bea8613a7762363e200ea905da">capacity</a>, 0);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// FIXME ASSERT_EQ(chunk.code, NULL);</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// FIXME ASSERT_EQ(chunk.lines, NULL);</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="chunk_8c_source.html#l00034">addConstant()</a>, <a class="el" href="chunk_8h_source.html#l00036">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00037">Chunk::code</a>, <a class="el" href="chunk_8h_source.html#l00035">Chunk::count</a>, <a class="el" href="chunk_8c_source.html#l00014">freeChunk()</a>, <a class="el" href="chunk_8c_source.html#l00006">initChunk()</a>, <a class="el" href="chunk_8h_source.html#l00038">Chunk::lines</a>, <a class="el" href="chunk_8h_source.html#l00013">OP_CONSTANT</a>, and <a class="el" href="chunk_8c_source.html#l00021">writeChunk()</a>.</p>
+<p class="reference">References <a class="el" href="chunk_8c_source.html#l00034">addConstant()</a>, <a class="el" href="chunk_8h_source.html#l00036">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00035">Chunk::count</a>, <a class="el" href="chunk_8c_source.html#l00014">freeChunk()</a>, <a class="el" href="chunk_8c_source.html#l00006">initChunk()</a>, <a class="el" href="chunk_8h_source.html#l00013">OP_CONSTANT</a>, and <a class="el" href="chunk_8c_source.html#l00021">writeChunk()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -181,11 +182,12 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">count</a>, 0);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a131996bea8613a7762363e200ea905da">capacity</a>, 0);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a3bd97432faba57c9187c7d264995b33f">code</a>, NULL);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#abc3bc1330700917d0c02794dde641ec9">lines</a>, NULL);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// FIXME ASSERT_EQ(chunk.code, NULL);</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// FIXME ASSERT_EQ(chunk.lines, NULL);</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="chunk_8h_source.html#l00036">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00037">Chunk::code</a>, <a class="el" href="chunk_8h_source.html#l00035">Chunk::count</a>, <a class="el" href="chunk_8c_source.html#l00006">initChunk()</a>, and <a class="el" href="chunk_8h_source.html#l00038">Chunk::lines</a>.</p>
+<p class="reference">References <a class="el" href="chunk_8h_source.html#l00036">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00035">Chunk::count</a>, and <a class="el" href="chunk_8c_source.html#l00006">initChunk()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -220,21 +222,21 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chunk__test_8cpp_source.html#l00033">33</a> of file <a class="el" href="chunk__test_8cpp_source.html">chunk_test.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                       {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="struct_chunk.html">Chunk</a> chunk;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849">initChunk</a>(&amp;chunk);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Add data to chunk...</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> constant = <a class="code" href="chunk_8c.html#ade1c9eed6f03b09db332b7ddf4639f5f">addConstant</a>(&amp;chunk, 1.2);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a>(&amp;chunk, <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>, 123);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a>(&amp;chunk, constant, 123);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">count</a>, 2);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a131996bea8613a7762363e200ea905da">capacity</a>, 8);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// FIXME ASSERT_EQ(chunk.code, NULL);</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// FIXME ASSERT_EQ(chunk.lines, NULL);</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="chunk__test_8cpp_source.html#l00035">35</a> of file <a class="el" href="chunk__test_8cpp_source.html">chunk_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                       {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="struct_chunk.html">Chunk</a> chunk;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849">initChunk</a>(&amp;chunk);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Add data to chunk...</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> constant = <a class="code" href="chunk_8c.html#ade1c9eed6f03b09db332b7ddf4639f5f">addConstant</a>(&amp;chunk, 1.2);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a>(&amp;chunk, <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>, 123);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a>(&amp;chunk, constant, 123);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">count</a>, 2);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ASSERT_EQ(chunk.<a class="code" href="struct_chunk.html#a131996bea8613a7762363e200ea905da">capacity</a>, 8);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// FIXME ASSERT_EQ(chunk.code, NULL);</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// FIXME ASSERT_EQ(chunk.lines, NULL);</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="chunk_8c_source.html#l00034">addConstant()</a>, <a class="el" href="chunk_8h_source.html#l00036">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00035">Chunk::count</a>, <a class="el" href="chunk_8c_source.html#l00006">initChunk()</a>, <a class="el" href="chunk_8h_source.html#l00013">OP_CONSTANT</a>, and <a class="el" href="chunk_8c_source.html#l00021">writeChunk()</a>.</p>
 <div class="dynheader">
@@ -247,12 +249,10 @@ Here is the call graph for this function:</div>
 </div>
 </div><!-- contents -->
 <div class="ttc" id="achunk_8c_html_a6fb4c9316c5daf0ff4bd05af12e31849"><div class="ttname"><a href="chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849">initChunk</a></div><div class="ttdeci">void initChunk(Chunk *chunk)</div><div class="ttdoc">Initialise an empty chunk.</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8c_source.html#l00006">chunk.c:6</a></div></div>
-<div class="ttc" id="astruct_chunk_html_abc3bc1330700917d0c02794dde641ec9"><div class="ttname"><a href="struct_chunk.html#abc3bc1330700917d0c02794dde641ec9">Chunk::lines</a></div><div class="ttdeci">int * lines</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00038">chunk.h:38</a></div></div>
 <div class="ttc" id="astruct_chunk_html_a8223e13d71acf14f0e0cde2feae7e9df"><div class="ttname"><a href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">Chunk::count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00035">chunk.h:35</a></div></div>
 <div class="ttc" id="astruct_chunk_html"><div class="ttname"><a href="struct_chunk.html">Chunk</a></div><div class="ttdoc">Chunk Data Structure.</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00034">chunk.h:34</a></div></div>
 <div class="ttc" id="achunk_8c_html_ade1c9eed6f03b09db332b7ddf4639f5f"><div class="ttname"><a href="chunk_8c.html#ade1c9eed6f03b09db332b7ddf4639f5f">addConstant</a></div><div class="ttdeci">int addConstant(Chunk *chunk, Value value)</div><div class="ttdoc">Add a constant value to the given chunk.</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8c_source.html#l00034">chunk.c:34</a></div></div>
 <div class="ttc" id="achunk_8c_html_a39f84cc445d6fcd885816a3bd6dab12b"><div class="ttname"><a href="chunk_8c.html#a39f84cc445d6fcd885816a3bd6dab12b">writeChunk</a></div><div class="ttdeci">void writeChunk(Chunk *chunk, uint8_t byte, int line)</div><div class="ttdoc">Write a byte to the end of the given chunk.</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8c_source.html#l00021">chunk.c:21</a></div></div>
-<div class="ttc" id="astruct_chunk_html_a3bd97432faba57c9187c7d264995b33f"><div class="ttname"><a href="struct_chunk.html#a3bd97432faba57c9187c7d264995b33f">Chunk::code</a></div><div class="ttdeci">uint8_t * code</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00037">chunk.h:37</a></div></div>
 <div class="ttc" id="astruct_chunk_html_a131996bea8613a7762363e200ea905da"><div class="ttname"><a href="struct_chunk.html#a131996bea8613a7762363e200ea905da">Chunk::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00036">chunk.h:36</a></div></div>
 <div class="ttc" id="achunk_8c_html_ad8d91576259f317ef240aad402880875"><div class="ttname"><a href="chunk_8c.html#ad8d91576259f317ef240aad402880875">freeChunk</a></div><div class="ttdeci">void freeChunk(Chunk *chunk)</div><div class="ttdoc">Free up the resources used by the given chunk.</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8c_source.html#l00014">chunk.c:14</a></div></div>
 <div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a></div><div class="ttdeci">@ OP_CONSTANT</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00013">chunk.h:13</a></div></div>
