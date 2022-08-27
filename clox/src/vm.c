@@ -60,7 +60,7 @@ static InterpretResult run() {
 
         uint8_t instruction;
         switch(instruction = READ_BYTE()) {
-            case OP_CONSTANT:
+            case OP_CONSTANT:;
                 Value constant = READ_CONSTANT();
                 push(constant);
                 break;
