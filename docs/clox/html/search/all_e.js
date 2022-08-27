@@ -1,4 +1,11 @@
 var searchData=
 [
-  ['test_60',['TEST',['../chunk__test_8cpp.html#af74436bcbd4b665ebc11536ea9c21fc5',1,'TEST(clox, initChunk):&#160;chunk_test.cpp'],['../chunk__test_8cpp.html#a7c5127003131824e70bcaf81969dbcad',1,'TEST(clox, freeChunk):&#160;chunk_test.cpp'],['../chunk__test_8cpp.html#a64772c6c7dc851c96e9481e0f624fea5',1,'TEST(clox, writeChunk):&#160;chunk_test.cpp'],['../example__test_8cpp.html#a92c48d17199f0f36a3b05bde5451e67c',1,'TEST(clox, example):&#160;example_test.cpp']]]
+  ['value_60',['Value',['../value_8h.html#a566a00621638570a4186414035153a2e',1,'value.h']]],
+  ['value_2ec_61',['value.c',['../value_8c.html',1,'']]],
+  ['value_2eh_62',['value.h',['../value_8h.html',1,'']]],
+  ['valuearray_63',['ValueArray',['../struct_value_array.html',1,'']]],
+  ['values_64',['values',['../struct_value_array.html#ab4c919f5e88d92b18febe946d17dae7b',1,'ValueArray']]],
+  ['vm_65',['VM',['../struct_v_m.html',1,'VM'],['../vm_8c.html#aa699149d08a453047f82d6244ec9a32a',1,'vm():&#160;vm.c']]],
+  ['vm_2ec_66',['vm.c',['../vm_8c.html',1,'']]],
+  ['vm_2eh_67',['vm.h',['../vm_8h.html',1,'']]]
 ];
