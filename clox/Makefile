@@ -21,7 +21,8 @@ GTEST_HEADERS := $(shell find $(GTEST_DIR)/include -name *.h)
 GTEST_SRCS := $(shell find $(GTEST_DIR)/src -name *.h -or -name *.cc)
 
 INC_DIRS := $(shell find $(SRC_DIR) -type d)
-INC_DIRS += $(GTEST_HEADERS)
+INC_DIRS += $(GTEST_DIR)/include/gtest
+# INC_DIRS += $(GTEST_DIR)/include/gtest/internal
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
 CC = g++
