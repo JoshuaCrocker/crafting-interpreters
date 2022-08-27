@@ -263,25 +263,41 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    uint8_t instruction = chunk-&gt;<a class="code" href="struct_chunk.html#a3bd97432faba57c9187c7d264995b33f">code</a>[offset];</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">switch</span> (instruction) {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#a8f5a369035da87257083bcec90bc3487">constantInstruction</a>(<span class="stringliteral">&quot;OP_CONSTANT&quot;</span>, chunk, offset);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8">OP_ADD</a>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_ADD&quot;</span>, offset);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2">OP_SUBTRACT</a>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_SUBTRACT&quot;</span>, offset);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508">OP_MULTIPLY</a>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_MULTIPLY&quot;</span>, offset);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83">OP_DIVIDE</a>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_DIVIDE&quot;</span>, offset);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc">OP_NEGATE</a>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_NEGATE&quot;</span>, offset);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_RETURN&quot;</span>, offset);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            printf(<span class="stringliteral">&quot;Unknown opcode %d\n&quot;</span>, instruction);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> offset + 1;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#a8f5a369035da87257083bcec90bc3487">constantInstruction</a>(<span class="stringliteral">&quot;OP_CONSTANT&quot;</span>, chunk, offset);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8">OP_ADD</a>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_ADD&quot;</span>, offset);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2">OP_SUBTRACT</a>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_SUBTRACT&quot;</span>, offset);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508">OP_MULTIPLY</a>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_MULTIPLY&quot;</span>, offset);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83">OP_DIVIDE</a>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_DIVIDE&quot;</span>, offset);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc">OP_NEGATE</a>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_NEGATE&quot;</span>, offset);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f">simpleInstruction</a>(<span class="stringliteral">&quot;OP_RETURN&quot;</span>, offset);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                printf(<span class="stringliteral">&quot;Unknown opcode %d\n&quot;</span>, instruction);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">return</span> offset + 1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="chunk_8h_source.html#l00037">Chunk::code</a>, <a class="el" href="debug_8c_source.html#l00018">constantInstruction()</a>, <a class="el" href="chunk_8h_source.html#l00038">Chunk::lines</a>, <a class="el" href="chunk_8h_source.html#l00014">OP_ADD</a>, <a class="el" href="chunk_8h_source.html#l00013">OP_CONSTANT</a>, <a class="el" href="chunk_8h_source.html#l00017">OP_DIVIDE</a>, <a class="el" href="chunk_8h_source.html#l00016">OP_MULTIPLY</a>, <a class="el" href="chunk_8h_source.html#l00018">OP_NEGATE</a>, <a class="el" href="chunk_8h_source.html#l00019">OP_RETURN</a>, <a class="el" href="chunk_8h_source.html#l00015">OP_SUBTRACT</a>, and <a class="el" href="debug_8c_source.html#l00013">simpleInstruction()</a>.</p>
 
@@ -367,7 +383,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="adebug_8c_html_a8f5a369035da87257083bcec90bc3487"><div class="ttname"><a href="debug_8c.html#a8f5a369035da87257083bcec90bc3487">constantInstruction</a></div><div class="ttdeci">static int constantInstruction(const char *name, Chunk *chunk, int offset)</div><div class="ttdef"><b>Definition:</b> <a href="debug_8c_source.html#l00018">debug.c:18</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 27 2022 12:33:43 for clox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 27 2022 13:54:49 for clox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
