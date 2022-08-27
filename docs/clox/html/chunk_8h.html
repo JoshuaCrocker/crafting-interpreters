@@ -98,8 +98,16 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abeb7dfb0e9e2b3114e240a405d046ea7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a> { <a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>, 
+<tr class="memitem:abeb7dfb0e9e2b3114e240a405d046ea7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a> { <br />
+&#160;&#160;<a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>, 
+<a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8">OP_ADD</a>, 
+<a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2">OP_SUBTRACT</a>, 
+<a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508">OP_MULTIPLY</a>, 
+<br />
+&#160;&#160;<a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83">OP_DIVIDE</a>, 
+<a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc">OP_NEGATE</a>, 
 <a class="el" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a>
+<br />
  }</td></tr>
 <tr class="memdesc:abeb7dfb0e9e2b3114e240a405d046ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpCodes.  <a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7">More...</a><br /></td></tr>
 <tr class="separator:abeb7dfb0e9e2b3114e240a405d046ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,14 +144,24 @@ Functions</h2></td></tr>
 <p>Represent an instruction for the Virtual Machine to execute. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c"></a>OP_CONSTANT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8"></a>OP_ADD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2"></a>OP_SUBTRACT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508"></a>OP_MULTIPLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83"></a>OP_DIVIDE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc"></a>OP_NEGATE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3"></a>OP_RETURN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="chunk_8h_source.html#l00012">12</a> of file <a class="el" href="chunk_8h_source.html">chunk.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;             {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a>,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;} <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8">OP_ADD</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2">OP_SUBTRACT</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508">OP_MULTIPLY</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83">OP_DIVIDE</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc">OP_NEGATE</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -190,9 +208,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> chunk-&gt;<a class="code" href="struct_chunk.html#a6ef3ac2a64667a4635b414daca1196af">constants</a>.<a class="code" href="struct_value_array.html#a576b2288798a1be9ef9a4673cd410cb9">count</a> - 1;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="chunk_8h_source.html#l00034">Chunk::constants</a>, <a class="el" href="value_8h_source.html#l00028">ValueArray::count</a>, and <a class="el" href="value_8c_source.html#l00017">writeValueArray()</a>.</p>
+<p class="reference">References <a class="el" href="chunk_8h_source.html#l00039">Chunk::constants</a>, <a class="el" href="value_8h_source.html#l00028">ValueArray::count</a>, and <a class="el" href="value_8c_source.html#l00017">writeValueArray()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00005">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00006">main()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -238,9 +256,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849">initChunk</a>(chunk);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="chunk_8h_source.html#l00031">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00032">Chunk::code</a>, <a class="el" href="chunk_8h_source.html#l00034">Chunk::constants</a>, <a class="el" href="memory_8h_source.html#l00012">FREE_ARRAY</a>, <a class="el" href="value_8c_source.html#l00012">freeValueArray()</a>, <a class="el" href="chunk_8c_source.html#l00006">initChunk()</a>, and <a class="el" href="chunk_8h_source.html#l00033">Chunk::lines</a>.</p>
+<p class="reference">References <a class="el" href="chunk_8h_source.html#l00036">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00037">Chunk::code</a>, <a class="el" href="chunk_8h_source.html#l00039">Chunk::constants</a>, <a class="el" href="memory_8h_source.html#l00012">FREE_ARRAY</a>, <a class="el" href="value_8c_source.html#l00012">freeValueArray()</a>, <a class="el" href="chunk_8c_source.html#l00006">initChunk()</a>, and <a class="el" href="chunk_8h_source.html#l00038">Chunk::lines</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00005">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00006">main()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -287,9 +305,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="value_8c.html#a6b3e6aaa3c61222073b87c5c033c9370">initValueArray</a>(&amp;chunk-&gt;<a class="code" href="struct_chunk.html#a6ef3ac2a64667a4635b414daca1196af">constants</a>);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="chunk_8h_source.html#l00031">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00032">Chunk::code</a>, <a class="el" href="chunk_8h_source.html#l00034">Chunk::constants</a>, <a class="el" href="chunk_8h_source.html#l00030">Chunk::count</a>, <a class="el" href="value_8c_source.html#l00006">initValueArray()</a>, and <a class="el" href="chunk_8h_source.html#l00033">Chunk::lines</a>.</p>
+<p class="reference">References <a class="el" href="chunk_8h_source.html#l00036">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00037">Chunk::code</a>, <a class="el" href="chunk_8h_source.html#l00039">Chunk::constants</a>, <a class="el" href="chunk_8h_source.html#l00035">Chunk::count</a>, <a class="el" href="value_8c_source.html#l00006">initValueArray()</a>, and <a class="el" href="chunk_8h_source.html#l00038">Chunk::lines</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chunk_8c_source.html#l00014">freeChunk()</a>, and <a class="el" href="main_8c_source.html#l00005">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chunk_8c_source.html#l00014">freeChunk()</a>, and <a class="el" href="main_8c_source.html#l00006">main()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -359,9 +377,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    chunk-&gt;<a class="code" href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">count</a>++;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="chunk_8h_source.html#l00031">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00032">Chunk::code</a>, <a class="el" href="chunk_8h_source.html#l00030">Chunk::count</a>, <a class="el" href="memory_8h_source.html#l00009">GROW_ARRAY</a>, <a class="el" href="memory_8h_source.html#l00006">GROW_CAPACITY</a>, and <a class="el" href="chunk_8h_source.html#l00033">Chunk::lines</a>.</p>
+<p class="reference">References <a class="el" href="chunk_8h_source.html#l00036">Chunk::capacity</a>, <a class="el" href="chunk_8h_source.html#l00037">Chunk::code</a>, <a class="el" href="chunk_8h_source.html#l00035">Chunk::count</a>, <a class="el" href="memory_8h_source.html#l00009">GROW_ARRAY</a>, <a class="el" href="memory_8h_source.html#l00006">GROW_CAPACITY</a>, and <a class="el" href="chunk_8h_source.html#l00038">Chunk::lines</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00005">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00006">main()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -373,23 +391,28 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <div class="ttc" id="achunk_8c_html_a6fb4c9316c5daf0ff4bd05af12e31849"><div class="ttname"><a href="chunk_8c.html#a6fb4c9316c5daf0ff4bd05af12e31849">initChunk</a></div><div class="ttdeci">void initChunk(Chunk *chunk)</div><div class="ttdoc">Initialise an empty chunk.</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8c_source.html#l00006">chunk.c:6</a></div></div>
 <div class="ttc" id="avalue_8c_html_a0c97a46aa82855c0fdc378ab019c5838"><div class="ttname"><a href="value_8c.html#a0c97a46aa82855c0fdc378ab019c5838">freeValueArray</a></div><div class="ttdeci">void freeValueArray(ValueArray *array)</div><div class="ttdoc">Free up the resources used by the given array.</div><div class="ttdef"><b>Definition:</b> <a href="value_8c_source.html#l00012">value.c:12</a></div></div>
-<div class="ttc" id="astruct_chunk_html_abc3bc1330700917d0c02794dde641ec9"><div class="ttname"><a href="struct_chunk.html#abc3bc1330700917d0c02794dde641ec9">Chunk::lines</a></div><div class="ttdeci">int * lines</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00033">chunk.h:33</a></div></div>
+<div class="ttc" id="astruct_chunk_html_abc3bc1330700917d0c02794dde641ec9"><div class="ttname"><a href="struct_chunk.html#abc3bc1330700917d0c02794dde641ec9">Chunk::lines</a></div><div class="ttdeci">int * lines</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00038">chunk.h:38</a></div></div>
+<div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508">OP_MULTIPLY</a></div><div class="ttdeci">@ OP_MULTIPLY</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00016">chunk.h:16</a></div></div>
 <div class="ttc" id="amemory_8h_html_ad3f26420257fbc4c78eece0f473860c2"><div class="ttname"><a href="memory_8h.html#ad3f26420257fbc4c78eece0f473860c2">GROW_CAPACITY</a></div><div class="ttdeci">#define GROW_CAPACITY(capacity)</div><div class="ttdef"><b>Definition:</b> <a href="memory_8h_source.html#l00006">memory.h:6</a></div></div>
-<div class="ttc" id="astruct_chunk_html_a6ef3ac2a64667a4635b414daca1196af"><div class="ttname"><a href="struct_chunk.html#a6ef3ac2a64667a4635b414daca1196af">Chunk::constants</a></div><div class="ttdeci">ValueArray constants</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00034">chunk.h:34</a></div></div>
+<div class="ttc" id="astruct_chunk_html_a6ef3ac2a64667a4635b414daca1196af"><div class="ttname"><a href="struct_chunk.html#a6ef3ac2a64667a4635b414daca1196af">Chunk::constants</a></div><div class="ttdeci">ValueArray constants</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00039">chunk.h:39</a></div></div>
 <div class="ttc" id="avalue_8c_html_a38e75520b9468a64c7bf5ada90e017c2"><div class="ttname"><a href="value_8c.html#a38e75520b9468a64c7bf5ada90e017c2">writeValueArray</a></div><div class="ttdeci">void writeValueArray(ValueArray *array, Value value)</div><div class="ttdoc">Write a value to the end of the given array.</div><div class="ttdef"><b>Definition:</b> <a href="value_8c_source.html#l00017">value.c:17</a></div></div>
 <div class="ttc" id="avalue_8c_html_a6b3e6aaa3c61222073b87c5c033c9370"><div class="ttname"><a href="value_8c.html#a6b3e6aaa3c61222073b87c5c033c9370">initValueArray</a></div><div class="ttdeci">void initValueArray(ValueArray *array)</div><div class="ttdoc">Initialise an empty array.</div><div class="ttdef"><b>Definition:</b> <a href="value_8c_source.html#l00006">value.c:6</a></div></div>
-<div class="ttc" id="astruct_chunk_html_a8223e13d71acf14f0e0cde2feae7e9df"><div class="ttname"><a href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">Chunk::count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00030">chunk.h:30</a></div></div>
+<div class="ttc" id="astruct_chunk_html_a8223e13d71acf14f0e0cde2feae7e9df"><div class="ttname"><a href="struct_chunk.html#a8223e13d71acf14f0e0cde2feae7e9df">Chunk::count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00035">chunk.h:35</a></div></div>
 <div class="ttc" id="amemory_8h_html_a535c54c8dcb6e740b47e09ee33c07f8f"><div class="ttname"><a href="memory_8h.html#a535c54c8dcb6e740b47e09ee33c07f8f">GROW_ARRAY</a></div><div class="ttdeci">#define GROW_ARRAY(type, pointer, oldCount, newCount)</div><div class="ttdef"><b>Definition:</b> <a href="memory_8h_source.html#l00009">memory.h:9</a></div></div>
 <div class="ttc" id="astruct_value_array_html_a576b2288798a1be9ef9a4673cd410cb9"><div class="ttname"><a href="struct_value_array.html#a576b2288798a1be9ef9a4673cd410cb9">ValueArray::count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition:</b> <a href="value_8h_source.html#l00028">value.h:28</a></div></div>
-<div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a></div><div class="ttdeci">@ OP_RETURN</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00014">chunk.h:14</a></div></div>
-<div class="ttc" id="astruct_chunk_html_a3bd97432faba57c9187c7d264995b33f"><div class="ttname"><a href="struct_chunk.html#a3bd97432faba57c9187c7d264995b33f">Chunk::code</a></div><div class="ttdeci">uint8_t * code</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00032">chunk.h:32</a></div></div>
-<div class="ttc" id="astruct_chunk_html_a131996bea8613a7762363e200ea905da"><div class="ttname"><a href="struct_chunk.html#a131996bea8613a7762363e200ea905da">Chunk::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00031">chunk.h:31</a></div></div>
+<div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2">OP_SUBTRACT</a></div><div class="ttdeci">@ OP_SUBTRACT</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00015">chunk.h:15</a></div></div>
+<div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a></div><div class="ttdeci">@ OP_RETURN</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00019">chunk.h:19</a></div></div>
+<div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8">OP_ADD</a></div><div class="ttdeci">@ OP_ADD</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00014">chunk.h:14</a></div></div>
+<div class="ttc" id="astruct_chunk_html_a3bd97432faba57c9187c7d264995b33f"><div class="ttname"><a href="struct_chunk.html#a3bd97432faba57c9187c7d264995b33f">Chunk::code</a></div><div class="ttdeci">uint8_t * code</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00037">chunk.h:37</a></div></div>
+<div class="ttc" id="astruct_chunk_html_a131996bea8613a7762363e200ea905da"><div class="ttname"><a href="struct_chunk.html#a131996bea8613a7762363e200ea905da">Chunk::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00036">chunk.h:36</a></div></div>
+<div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83">OP_DIVIDE</a></div><div class="ttdeci">@ OP_DIVIDE</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00017">chunk.h:17</a></div></div>
 <div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7">OpCode</a></div><div class="ttdeci">OpCode</div><div class="ttdoc">OpCodes.</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00012">chunk.h:12</a></div></div>
+<div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc">OP_NEGATE</a></div><div class="ttdeci">@ OP_NEGATE</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00018">chunk.h:18</a></div></div>
 <div class="ttc" id="achunk_8h_html_abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c"><div class="ttname"><a href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a></div><div class="ttdeci">@ OP_CONSTANT</div><div class="ttdef"><b>Definition:</b> <a href="chunk_8h_source.html#l00013">chunk.h:13</a></div></div>
 <div class="ttc" id="amemory_8h_html_a3b69129733a4bd10f3c5726e4ea6e518"><div class="ttname"><a href="memory_8h.html#a3b69129733a4bd10f3c5726e4ea6e518">FREE_ARRAY</a></div><div class="ttdeci">#define FREE_ARRAY(type, pointer, oldCount)</div><div class="ttdef"><b>Definition:</b> <a href="memory_8h_source.html#l00012">memory.h:12</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 21 2022 16:37:50 for clox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 27 2022 12:33:43 for clox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

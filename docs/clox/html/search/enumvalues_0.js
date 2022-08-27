@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['op_5fconstant_73',['OP_CONSTANT',['../chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c',1,'chunk.h']]],
-  ['op_5freturn_74',['OP_RETURN',['../chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3',1,'chunk.h']]]
+  ['interpret_5fcompile_5ferror_116',['INTERPRET_COMPILE_ERROR',['../vm_8h.html#a2d13677ff3a805e038dc7a185854010baae99c979231ba7e46438a670d60eaa1f',1,'vm.h']]],
+  ['interpret_5fok_117',['INTERPRET_OK',['../vm_8h.html#a2d13677ff3a805e038dc7a185854010ba21efe79feb312c3a5aab7a6c3f867839',1,'vm.h']]],
+  ['interpret_5fruntime_5ferror_118',['INTERPRET_RUNTIME_ERROR',['../vm_8h.html#a2d13677ff3a805e038dc7a185854010ba972582a24d30295c98b476fc924f2a0c',1,'vm.h']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['grow_5farray_76',['GROW_ARRAY',['../memory_8h.html#a535c54c8dcb6e740b47e09ee33c07f8f',1,'memory.h']]],
-  ['grow_5fcapacity_77',['GROW_CAPACITY',['../memory_8h.html#ad3f26420257fbc4c78eece0f473860c2',1,'memory.h']]]
+  ['debug_5ftrace_5fexecution_127',['DEBUG_TRACE_EXECUTION',['../common_8h.html#aa72e89aa9c10fe99c79590d3298b635d',1,'common.h']]]
 ];

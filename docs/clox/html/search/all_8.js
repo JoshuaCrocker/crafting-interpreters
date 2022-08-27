@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['op_5fconstant_26',['OP_CONSTANT',['../chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c',1,'chunk.h']]],
-  ['op_5freturn_27',['OP_RETURN',['../chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3',1,'chunk.h']]],
-  ['opcode_28',['OpCode',['../chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7',1,'chunk.h']]]
+  ['main_32',['main',['../main_8c.html#ac0f2228420376f4db7e1274f2b41667c',1,'main.c']]],
+  ['main_2ec_33',['main.c',['../main_8c.html',1,'']]],
+  ['memory_2ec_34',['memory.c',['../memory_8c.html',1,'']]],
+  ['memory_2eh_35',['memory.h',['../memory_8h.html',1,'']]]
 ];

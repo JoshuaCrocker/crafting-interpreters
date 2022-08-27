@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['free_5farray_75',['FREE_ARRAY',['../memory_8h.html#a3b69129733a4bd10f3c5726e4ea6e518',1,'memory.h']]]
+  ['binary_5fop_126',['BINARY_OP',['../vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f',1,'vm.c']]]
 ];
