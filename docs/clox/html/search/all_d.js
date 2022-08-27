@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['value_56',['Value',['../value_8h.html#a566a00621638570a4186414035153a2e',1,'value.h']]],
-  ['value_2ec_57',['value.c',['../value_8c.html',1,'']]],
-  ['value_2eh_58',['value.h',['../value_8h.html',1,'']]],
-  ['valuearray_59',['ValueArray',['../struct_value_array.html',1,'']]],
-  ['values_60',['values',['../struct_value_array.html#ab4c919f5e88d92b18febe946d17dae7b',1,'ValueArray']]],
-  ['vm_61',['VM',['../struct_v_m.html',1,'VM'],['../vm_8c.html#aa699149d08a453047f82d6244ec9a32a',1,'vm():&#160;vm.c']]],
-  ['vm_2ec_62',['vm.c',['../vm_8c.html',1,'']]],
-  ['vm_2eh_63',['vm.h',['../vm_8h.html',1,'']]]
+  ['simpleinstruction_55',['simpleInstruction',['../debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f',1,'debug.c']]],
+  ['stack_56',['stack',['../struct_v_m.html#a9ec8bdf0ea45ca5c037b55c8991ade1b',1,'VM']]],
+  ['stack_5fmax_57',['STACK_MAX',['../vm_8h.html#a27b296fccb4da1e9cfcf1f9c810e619e',1,'vm.h']]],
+  ['stacktop_58',['stackTop',['../struct_v_m.html#a77aee79a7d43b4862d6bf9179802119f',1,'VM']]]
 ];

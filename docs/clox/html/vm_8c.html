@@ -276,12 +276,12 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>InterpretResult </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vm_8c_source.html#l00084">84</a> of file <a class="el" href="vm_8c_source.html">vm.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="vm_8c.html#aa699149d08a453047f82d6244ec9a32a">vm</a>.<a class="code" href="struct_v_m.html#a445823b327e6ad0c98101de60ae9a91d">chunk</a> = chunk;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="vm_8c.html#aa699149d08a453047f82d6244ec9a32a">vm</a>.<a class="code" href="struct_v_m.html#a7c8dc41a0f9b22b6fcf02ccaaf98727e">ip</a> = <a class="code" href="vm_8c.html#aa699149d08a453047f82d6244ec9a32a">vm</a>.<a class="code" href="struct_v_m.html#a445823b327e6ad0c98101de60ae9a91d">chunk</a>-&gt;<a class="code" href="struct_chunk.html#a3bd97432faba57c9187c7d264995b33f">code</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="vm_8c.html#a534186f2e85014d9e17ca1b1cdbc70cd">run</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="vm_8c_source.html#l00088">88</a> of file <a class="el" href="vm_8c_source.html">vm.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                        {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="vm_8c.html#aa699149d08a453047f82d6244ec9a32a">vm</a>.<a class="code" href="struct_v_m.html#a445823b327e6ad0c98101de60ae9a91d">chunk</a> = chunk;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="vm_8c.html#aa699149d08a453047f82d6244ec9a32a">vm</a>.<a class="code" href="struct_v_m.html#a7c8dc41a0f9b22b6fcf02ccaaf98727e">ip</a> = <a class="code" href="vm_8c.html#aa699149d08a453047f82d6244ec9a32a">vm</a>.<a class="code" href="struct_v_m.html#a445823b327e6ad0c98101de60ae9a91d">chunk</a>-&gt;<a class="code" href="struct_chunk.html#a3bd97432faba57c9187c7d264995b33f">code</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="vm_8c.html#a534186f2e85014d9e17ca1b1cdbc70cd">run</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vm_8h_source.html#l00010">VM::chunk</a>, <a class="el" href="chunk_8h_source.html#l00037">Chunk::code</a>, <a class="el" href="vm_8h_source.html#l00011">VM::ip</a>, <a class="el" href="vm_8c_source.html#l00039">run()</a>, and <a class="el" href="vm_8c_source.html#l00015">vm</a>.</p>
 
@@ -462,30 +462,34 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        uint8_t instruction;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">switch</span>(instruction = <a class="code" href="vm_8c.html#a8d4d508ce869a6217c76b3d9d2a2de1c">READ_BYTE</a>()) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>:;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <a class="code" href="value_8h.html#a566a00621638570a4186414035153a2e">Value</a> constant = <a class="code" href="vm_8c.html#a614083110814a3cb141c7653b3c346bc">READ_CONSTANT</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="vm_8c.html#ac56a5c5a8a90b5fac03dd9d59d2de40b">push</a>(constant);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8">OP_ADD</a>:        <a class="code" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>(+); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2">OP_SUBTRACT</a>:   <a class="code" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>(-); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508">OP_MULTIPLY</a>:   <a class="code" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>(*); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83">OP_DIVIDE</a>:     <a class="code" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>(/); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc">OP_NEGATE</a>:     <a class="code" href="vm_8c.html#ac56a5c5a8a90b5fac03dd9d59d2de40b">push</a>(-<a class="code" href="vm_8c.html#a182b10dd85413185aed3c2e3db794041">pop</a>()); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="code" href="value_8c.html#a82c711c20ecc604872af80107c561375">printValue</a>(<a class="code" href="vm_8c.html#a182b10dd85413185aed3c2e3db794041">pop</a>());</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="vm_8h.html#a2d13677ff3a805e038dc7a185854010ba21efe79feb312c3a5aab7a6c3f867839">INTERPRET_OK</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#undef READ_BYTE</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#undef READ_CONSTANT</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#undef BINARY_OP</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a0aae8bd3e44dcbe18dcd011ea16f7d3c">OP_CONSTANT</a>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <a class="code" href="value_8h.html#a566a00621638570a4186414035153a2e">Value</a> constant = <a class="code" href="vm_8c.html#a614083110814a3cb141c7653b3c346bc">READ_CONSTANT</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    <a class="code" href="vm_8c.html#ac56a5c5a8a90b5fac03dd9d59d2de40b">push</a>(constant);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a96186829480e5b34b1373288e956b1c8">OP_ADD</a>:        { <a class="code" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>(+); <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7adedf7e5a9b5ff1438fc168f1ceb9acc2">OP_SUBTRACT</a>:   { <a class="code" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>(-); <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a53859d69b6be506aaa34bcde305e3508">OP_MULTIPLY</a>:   { <a class="code" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>(*); <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a78a61af8bcdaef135491c842df4c2b83">OP_DIVIDE</a>:     { <a class="code" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>(/); <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7a24efa62543d37080a32e43b653c343dc">OP_NEGATE</a>:     { <a class="code" href="vm_8c.html#ac56a5c5a8a90b5fac03dd9d59d2de40b">push</a>(-<a class="code" href="vm_8c.html#a182b10dd85413185aed3c2e3db794041">pop</a>()); <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="chunk_8h.html#abeb7dfb0e9e2b3114e240a405d046ea7ad436c18b194473f5ec64c28b774e41b3">OP_RETURN</a>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    <a class="code" href="value_8c.html#a82c711c20ecc604872af80107c561375">printValue</a>(<a class="code" href="vm_8c.html#a182b10dd85413185aed3c2e3db794041">pop</a>());</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="vm_8h.html#a2d13677ff3a805e038dc7a185854010ba21efe79feb312c3a5aab7a6c3f867839">INTERPRET_OK</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#undef READ_BYTE</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#undef READ_CONSTANT</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#undef BINARY_OP</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vm_8c.html#aff9af65e3e0f07c9608a0407ae2e239f">BINARY_OP</a>, <a class="el" href="vm_8h_source.html#l00010">VM::chunk</a>, <a class="el" href="chunk_8h_source.html#l00037">Chunk::code</a>, <a class="el" href="debug_8c_source.html#l00026">disassembleInstruction()</a>, <a class="el" href="vm_8h_source.html#l00017">INTERPRET_OK</a>, <a class="el" href="vm_8h_source.html#l00011">VM::ip</a>, <a class="el" href="chunk_8h_source.html#l00014">OP_ADD</a>, <a class="el" href="chunk_8h_source.html#l00013">OP_CONSTANT</a>, <a class="el" href="chunk_8h_source.html#l00017">OP_DIVIDE</a>, <a class="el" href="chunk_8h_source.html#l00016">OP_MULTIPLY</a>, <a class="el" href="chunk_8h_source.html#l00018">OP_NEGATE</a>, <a class="el" href="chunk_8h_source.html#l00019">OP_RETURN</a>, <a class="el" href="chunk_8h_source.html#l00015">OP_SUBTRACT</a>, <a class="el" href="vm_8c_source.html#l00034">pop()</a>, <a class="el" href="value_8c_source.html#l00028">printValue()</a>, <a class="el" href="vm_8c_source.html#l00029">push()</a>, <a class="el" href="vm_8c.html#a8d4d508ce869a6217c76b3d9d2a2de1c">READ_BYTE</a>, <a class="el" href="vm_8c.html#a614083110814a3cb141c7653b3c346bc">READ_CONSTANT</a>, <a class="el" href="vm_8h_source.html#l00012">VM::stack</a>, <a class="el" href="vm_8h_source.html#l00013">VM::stackTop</a>, and <a class="el" href="vm_8c_source.html#l00015">vm</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vm_8c_source.html#l00084">interpret()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vm_8c_source.html#l00088">interpret()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -517,7 +521,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="vm_8c_source.html#l00015">15</a> of file <a class="el" href="vm_8c_source.html">vm.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vm_8c_source.html#l00084">interpret()</a>, <a class="el" href="vm_8c_source.html#l00034">pop()</a>, <a class="el" href="vm_8c_source.html#l00029">push()</a>, <a class="el" href="vm_8c_source.html#l00017">resetStack()</a>, and <a class="el" href="vm_8c_source.html#l00039">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vm_8c_source.html#l00088">interpret()</a>, <a class="el" href="vm_8c_source.html#l00034">pop()</a>, <a class="el" href="vm_8c_source.html#l00029">push()</a>, <a class="el" href="vm_8c_source.html#l00017">resetStack()</a>, and <a class="el" href="vm_8c_source.html#l00039">run()</a>.</p>
 
 </div>
 </div>
@@ -548,7 +552,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="avm_8c_html_a534186f2e85014d9e17ca1b1cdbc70cd"><div class="ttname"><a href="vm_8c.html#a534186f2e85014d9e17ca1b1cdbc70cd">run</a></div><div class="ttdeci">static InterpretResult run()</div><div class="ttdef"><b>Definition:</b> <a href="vm_8c_source.html#l00039">vm.c:39</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 27 2022 12:33:43 for clox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 27 2022 13:54:49 for clox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
