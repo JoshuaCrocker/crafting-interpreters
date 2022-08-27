@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['free_5farray_14',['FREE_ARRAY',['../memory_8h.html#a3b69129733a4bd10f3c5726e4ea6e518',1,'memory.h']]],
-  ['freechunk_15',['freeChunk',['../chunk_8c.html#ad8d91576259f317ef240aad402880875',1,'freeChunk(Chunk *chunk):&#160;chunk.c'],['../chunk_8h.html#ad8d91576259f317ef240aad402880875',1,'freeChunk(Chunk *chunk):&#160;chunk.c']]],
-  ['freevaluearray_16',['freeValueArray',['../value_8c.html#a0c97a46aa82855c0fdc378ab019c5838',1,'freeValueArray(ValueArray *array):&#160;value.c'],['../value_8h.html#a0c97a46aa82855c0fdc378ab019c5838',1,'freeValueArray(ValueArray *array):&#160;value.c']]]
+  ['debug_2ec_11',['debug.c',['../debug_8c.html',1,'']]],
+  ['debug_2eh_12',['debug.h',['../debug_8h.html',1,'']]],
+  ['debug_5ftrace_5fexecution_13',['DEBUG_TRACE_EXECUTION',['../common_8h.html#aa72e89aa9c10fe99c79590d3298b635d',1,'common.h']]],
+  ['disassemblechunk_14',['disassembleChunk',['../debug_8c.html#a29c4d1ee6794982df52188aebd8f224d',1,'disassembleChunk(Chunk *chunk, const char *name):&#160;debug.c'],['../debug_8h.html#a29c4d1ee6794982df52188aebd8f224d',1,'disassembleChunk(Chunk *chunk, const char *name):&#160;debug.c']]],
+  ['disassembleinstruction_15',['disassembleInstruction',['../debug_8c.html#a867d9e6add2fbc6340e590e71776fa78',1,'disassembleInstruction(Chunk *chunk, int offset):&#160;debug.c'],['../debug_8h.html#a867d9e6add2fbc6340e590e71776fa78',1,'disassembleInstruction(Chunk *chunk, int offset):&#160;debug.c']]]
 ];
