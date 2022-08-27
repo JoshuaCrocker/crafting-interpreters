@@ -1,0 +1,3 @@
+[submodule "clox/vendor/gtest/googletest"]
+	path = clox/vendor/gtest/googletest
+	url = git@github.com:google/googletest.git
