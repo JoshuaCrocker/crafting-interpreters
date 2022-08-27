@@ -28,7 +28,7 @@ jobs:
       with:
         submodules: true
     - run: cd clox && make build_gtest build/test
-    - run: ./build/test
+    - run: ./clox/build/test
 
   docs:
     runs-on: ubuntu-latest
