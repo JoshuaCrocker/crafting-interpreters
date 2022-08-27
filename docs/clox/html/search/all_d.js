@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['simpleinstruction_55',['simpleInstruction',['../debug_8c.html#aa3fe8041f8d02a586ddfb81f95048b7f',1,'debug.c']]],
-  ['stack_56',['stack',['../struct_v_m.html#a9ec8bdf0ea45ca5c037b55c8991ade1b',1,'VM']]],
-  ['stack_5fmax_57',['STACK_MAX',['../vm_8h.html#a27b296fccb4da1e9cfcf1f9c810e619e',1,'vm.h']]],
-  ['stacktop_58',['stackTop',['../struct_v_m.html#a77aee79a7d43b4862d6bf9179802119f',1,'VM']]]
+  ['test_59',['TEST',['../chunk__test_8cpp.html#af74436bcbd4b665ebc11536ea9c21fc5',1,'TEST(clox, initChunk):&#160;chunk_test.cpp'],['../chunk__test_8cpp.html#a7c5127003131824e70bcaf81969dbcad',1,'TEST(clox, freeChunk):&#160;chunk_test.cpp'],['../chunk__test_8cpp.html#a64772c6c7dc851c96e9481e0f624fea5',1,'TEST(clox, writeChunk):&#160;chunk_test.cpp']]]
 ];
