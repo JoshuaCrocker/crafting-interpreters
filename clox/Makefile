@@ -44,7 +44,7 @@ $(BUILD_DIR)/$(TEST_TARGET): $(BUILD_DIR)/$(TARGET) $(SRCS) $(TEST_SRCS) $(GTEST
 	$(CC) $(CPPFLAGS) $(CFLAGS) -o $(BUILD_DIR)/$(TEST_TARGET) -c $(TEST_SRCS)
 
 $(BUILD_DIR)/test: $(BUILD_DIR)/$(TARGET) $(BUILD_DIR)/$(TEST_TARGET) vendor/gtest/gtest_main.a
-	$(CC) $(CPPFLAGS) $(CFLAGS) -lpthread $^ -o $@
+	$(CC) $(CPPFLAGS) $(CFLAGS) -pthread $^ -o $@
 
 .PHONY: run
 run:
